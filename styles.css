@@ -423,6 +423,7 @@ image-slot::part(frame) { background: linear-gradient(140deg, #ece6ff, #f6f3ff);
   display: grid; place-items: center;
   font-family: var(--font-display); font-weight: 800; font-size: 1rem; letter-spacing: .01em;
 }
+.testi-who .av-photo { width: 46px; height: 46px; border-radius: 50%; flex: none; object-fit: cover; object-position: 50% 50%; display: block; }
 .testi-who .nm { font-weight: 700; font-size: var(--t-small); }
 .testi-who .rl { font-size: var(--t-micro); color: var(--ink-50); font-family: var(--font-mono); }
 
