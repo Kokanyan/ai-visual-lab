@@ -440,7 +440,7 @@ image-slot::part(frame) { background: linear-gradient(140deg, #ece6ff, #f6f3ff);
 .ptag { position: absolute; top: 1.4rem; right: 1.4rem; background: var(--violet); color: #fff; font-family: var(--font-mono); font-size: var(--t-micro); letter-spacing: .1em; text-transform: uppercase; padding: .35em .8em; border-radius: 100px; }
 .ptier { font-family: var(--font-mono); font-size: var(--t-small); letter-spacing: .12em; text-transform: uppercase; color: var(--violet-deep); }
 .price-block { display: flex; flex-direction: column; gap: .15rem; }
-.price-early { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: .01em; text-transform: uppercase; color: var(--violet-deep); font-weight: 600; white-space: nowrap; }
+.price-early { font-family: var(--font-display); font-size: 0.85rem; letter-spacing: 0; text-transform: uppercase; color: var(--violet-deep); font-weight: 800; white-space: nowrap; }
 .price-was { font-family: var(--font-mono); font-size: var(--t-small); color: var(--ink-50); text-decoration: line-through; }
 .price-card.featured .price-early, .price-card.featured .price-was { color: var(--violet-200); }
 .pprice { font-family: var(--font-display); font-weight: 900; font-size: clamp(2.4rem,4vw,3rem); line-height: 1; }
@@ -452,7 +452,7 @@ image-slot::part(frame) { background: linear-gradient(140deg, #ece6ff, #f6f3ff);
 .price-card li::before { content: ""; width: 18px; height: 18px; flex: none; margin-top: 2px; border-radius: 50%; background: var(--violet-50) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235B3DF5' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center/12px no-repeat; }
 .price-card.featured li::before { background-color: rgba(255,255,255,.12); }
 .price-card .btn { margin-top: auto; justify-content: center; }
-@media (max-width: 1024px) { .price-grid { grid-template-columns: 1fr; max-width: 460px; margin-inline: auto; } .price-card.featured { transform: none; } }
+@media (max-width: 1120px) { .price-grid { grid-template-columns: 1fr; max-width: 460px; margin-inline: auto; } .price-card.featured { transform: none; } }
 
 /* ============================================================
    FAQ
