@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@400;500;600;700;800;900&family=Noto+Serif+Armenian:wght@500;600&family=Noto+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -308,12 +308,12 @@
     <div class="quiz-box reveal">
       <div class="quiz-photo"><img src="assets/banner.jpg" alt="" loading="lazy"></div>
       <div class="quiz-panel">
-        <span class="quiz-badge">10 հարց</span>
+        <span class="quiz-badge">11 հարց</span>
         <div class="quiz-body">
           <h2>Դեռ չե՞ս որոշել</h2>
           <p>Անցի՛ր անվճար թեստը և պարզի՛ր՝ արդյոք այս դասընթացը հենց քեզ համար է։</p>
         </div>
-        <a class="btn btn-light btn-lg quiz-btn" href="#pricing">Անցնել թեստը · 2 րոպե</a>
+        <button type="button" class="btn btn-light btn-lg quiz-btn" data-quiz-open>Անցնել թեստը · 2 րոպե</button>
       </div>
     </div>
   </div>
@@ -433,7 +433,21 @@
 
 </main>
 
+<!-- ================= QUIZ MODAL ================= -->
+<div class="quiz-modal" id="quiz-modal" hidden>
+  <div class="qm-backdrop" data-quiz-close></div>
+  <div class="qm-dialog" role="dialog" aria-modal="true" aria-label="Թեստ">
+    <header class="qm-head">
+      <div class="qm-progress"><span id="qm-bar"></span></div>
+      <div class="qm-meta">
+        <span class="qm-step" id="qm-step"></span>
+        <button class="qm-close" type="button" data-quiz-close aria-label="Փակել">&times;</button>
+      </div>
+    </header>
+    <div class="qm-content" id="qm-content"></div>
+  </div>
+</div>
 
-<script src="script.js?v=2"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>
